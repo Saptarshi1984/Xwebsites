@@ -26,12 +26,14 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 15px;
 
   }
   
   .nav-links {
     list-style: none;
     display: flex;
+    margin-right: 15px;
 
   }
   
@@ -42,7 +44,12 @@
   .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    transform: translateZ(10px);
   }
   
   .hamburger {
@@ -221,8 +228,31 @@
 
 /* media query for laptop */ 
 @media only screen and (min-width: 1200px) {
+
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .wrapContainer {
+        width: 60%;
+    }
+    #loadMore {
+        width: 25vh;
+    }
+    .left_sidebar {
+      margin: 6px 0;
+    }
+
+    .left_sidebar a {
+        font-size: 16px;
+        padding: 8px;  
+    }
+
+    .cam_box {
+        height: 150px;
+    }
+
+    .grid_links a {
+        font-size: 18px;
     }
 }
 
