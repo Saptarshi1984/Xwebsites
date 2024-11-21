@@ -1,6 +1,9 @@
+/* Hamburger Button Script */
+
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+/* const navLinks = document.getElementById('nav-links'); */
+const leftSidebar = document.getElementById('left_sidebar');
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+  leftSidebar.classList.toggle('show');
 });
