@@ -1,7 +1,9 @@
 // JavaScript to change Logo Dynamically
         window.onload = () => {
             const textElement = document.getElementById('logo');
+            const FooterText = document.getElementById('footer-text');
             textElement.textContent = "Logo Changed";
+            FooterText.textContent = "2024 LustfulLinks. All rights reserved.";
         };
 /* Hamburger Button Script */
 const hamburger = document.getElementById('hamburger');

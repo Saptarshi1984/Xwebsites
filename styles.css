@@ -44,7 +44,6 @@
   .logo {
     font-size: 2rem;
     font-weight: bold;
-<<<<<<< HEAD
     font-family: "Fascinate Inline", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -54,20 +53,12 @@
     background: linear-gradient(90deg, #e432e7, #a03ee7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-=======
-    margin-left: 15px;
-
->>>>>>> baa4139b6cd6179d25a79c001b95a3af24462b90
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     margin-right: 15px;
-<<<<<<< HEAD
-=======
-
->>>>>>> baa4139b6cd6179d25a79c001b95a3af24462b90
   }
   
   .nav-links li {
@@ -290,7 +281,6 @@
   transform: translateX(5px);
 }
 
-<<<<<<< HEAD
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {...} */
 
@@ -306,8 +296,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
 
-=======
->>>>>>> baa4139b6cd6179d25a79c001b95a3af24462b90
 /* media query for laptop */ 
 @media only screen and (min-width: 1200px) {
 
@@ -325,11 +313,7 @@
     }
 
     .left_sidebar a {
-<<<<<<< HEAD
         font-size: 20px;
-=======
-        font-size: 16px;
->>>>>>> baa4139b6cd6179d25a79c001b95a3af24462b90
         padding: 8px;  
     }
 
