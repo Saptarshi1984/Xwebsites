@@ -204,7 +204,7 @@
 
  .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
     margin: 15px auto;
@@ -313,7 +313,7 @@
     }
 
     .left_sidebar a {
-        font-size: 20px;
+        font-size: 16px;
         padding: 8px;  
     }
 
@@ -327,8 +327,8 @@
 }
 
 
-/* media query for mobile */
-@media (max-width: 768px) {
+/* media query for tablet */
+@media (max-width: 992px) {
 
   #loadMore {
     width: 30%;
@@ -340,29 +340,33 @@
     padding-top: 25px;
   }
     .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;        
     }
-}
 
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
+    .left_sidebar {
+      width: 0;
     }
-}
 
-    /* Media Queries */
-  
-  @media (max-width: 768px) {
-    .logo {
+    .left_sidebar.show {
+      width: 100%;
+      height: auto;
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      z-index: 0;
+      text-align: center;
+      left: 0;
     }
 
     .navbar {text-align: center;}
-  
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
     .nav-links {
       flex-direction: column;
       justify-content: center;
@@ -376,37 +380,34 @@
       width: 100%;
       display: none;
     }
-  
-    .nav-links.show {
-      display: flex;
-    }
 
-    .left_sidebar.show {
-      width: 100%;
-      height: auto;
-      position: absolute;
-      z-index: 0;
-      text-align: center;
-      left: 0;
-    }
-  
-    .nav-links li {
-      margin: 20px 0;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-
-    .left_sidebar, .right_sidebar{
-        width: 0;
-    }
-
-    .grid_links {
-        display: none;
-    } 
-    
+    .right_sidebar{
+      width: 0;
   }
+
+  .grid_links {
+      display: none;
+  } 
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
 
   .footer {
     background-color: black;
@@ -417,11 +418,13 @@
 
 .footer-content {
 
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    background-color: #ccc;
+
 }
 
 .footer-section h4 {
@@ -484,6 +487,3 @@
 .toggleMode:hover {
     background-color: #0056b3;
 }
-
-
-  
